@@ -1,6 +1,8 @@
 import streamlit as st
 from streamlit_folium import folium_static
 import folium
+import json
+
 
 def main() :
     st.title('테스트 페이지 입니다.')
@@ -25,6 +27,11 @@ def main() :
 
                 # call to render Folium map in Streamlit
                 folium_static(m)
+
+        elif choice_eg == '예시2' :
+            geo_path = 'data/korea.geojson'
+            geo_str = json.load(open(geo_path, encoding='utf-8'))
+
     
     elif select_lib == 'observable' :
         pass
