@@ -1,4 +1,6 @@
-data/korea.geojson
+data/korea_re_1.json
+data/df_sido.csv
+mysql_connection.py
 
 
 # Byte-compiled / optimized / DLL files
